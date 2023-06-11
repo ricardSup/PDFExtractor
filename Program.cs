@@ -138,7 +138,6 @@ namespace ConsoleApp1
                 if (containsPermitHolder || containsChargesSinceLastStatement)
                 {
                     deliveryAddress = deliveryAddress.Trim(); // Remove any leading/trailing whitespaces
-                    deliveryAddress += deliveryAddress + "\n";
                     return deliveryAddress; ;
                 }
 
@@ -174,7 +173,6 @@ namespace ConsoleApp1
                     deliveryAddress += trimmedLine + ";";
                 }
             }
-            deliveryAddress += deliveryAddress + "\n";
             return deliveryAddress;
         }
     }
